@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">  -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>xxxxx</title>
+    <script>
+        function Dashboard(){}
+        function Books(){}
+        function Category(){}
+        function Authors(){}
+        function Adherents(){}
+        function sideBarToggle(){
+            var x = document.getElementById("side-nav-move");
+                if (x.style.width === "0vw") {
+                    x.style.width = "100vw"
+                    x.style.left = "0px"
+                } else {
+                    x.style.width = "0vw";
+                    x.style.left = "-16px"
+                }
+        }
+    </script>
+</head>
+<body>
+        <div class="admin-dash-flex">
+            <div class="navbar-crud-flex">
+                <div class="dashboard-admin-container">
+                    <div class="admin-bar-icon">
+                        <i class="fa fa-bars icon-burger" onclick="sideBarToggle()" aria-hidden="true"></i>
+                    </div>
+                    <div class="search-bar">
+                        <input class="search-input" type="text" placeholder="Search here ...">
+                    </div>
+                    <div class="admin-bar">
+                        <i class="fa fa-cog settings" aria-hidden="true"></i>
+                        <i class="fa fa-bell-o notifications" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="dashboard">
+                    <div class="dashboard-statistics">
+                            <div class="stats books-listed">
+                                <i class="fa fa-facebook"></i>
+                                <h4>Books Listed</h4>
+                                <p><b>50 </b></p>
+                            </div>
+                            <div class="stats books-not-yet">  
+                                <i class="fa fa-facebook"></i>
+                                <h4>Books Not Returned Yet</h4>
+                                <p><b>2 </b></p>
+                            </div>
+                            <div class="stats registered-users">
+                                <i class="fa fa-facebook"></i>
+                                <h4>Registered Users</h4>
+                                <p><b>152 </b></p>
+                            </div>
+                            <div class="stats authors-listed">
+                                <i class="fa fa-facebook"></i>
+                                <h4>Authors Listed</h4>
+                                <p><b>20 </b></p>
+                            </div>
+                            <div class="stats listed-categories">
+                                <i class="fa fa-facebook"></i>
+                                <h4>Listed Categories</h4>
+                                <p><b>125 </b></p>
+                            </div>
+                    </div>
+                    <!-- <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Contact</th>
+                                <th>Contact</th>
+                                <th>Company</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>Maria Anders</td>
+                                <td>Maria Anders</td>
+                                <td>Germany</td>
+                                <td><form action=""><button class="btn btn-offline">offline</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>Maria Anders</td>
+                                <td>Maria Anders</td>
+                                <td>Germany</td>
+                                <td><form action=""><button class="btn btn-offline">offline</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>Maria Anders</td>
+                                <td>Maria Anders</td>
+                                <td>Germany</td>
+                                <td><form action=""><button class="btn btn-offline">offline</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>Maria Anders</td>
+                                <td>Maria Anders</td>
+                                <td>Germany</td>
+                                <td><form action=""><button class="btn btn-offline">offline</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>Maria Anders</td>
+                                <td>Maria Anders</td>
+                                <td>Germany</td>
+                                <td><form action=""><button class="btn btn-offline">offline</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Berglunds snabbköp</td>
+                                <td>Christina Berglund</td>
+                                <td>Christina Berglund</td>
+                                <td>Sweden</td>
+                                <td><form action=""><button class="btn btn-offline">offline</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>Francisco Chang</td>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                                <td><form action=""><button class="btn btn-online">online</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Ernst Handel</td>
+                                <td>Roland Mendel</td>
+                                <td>Roland Mendel</td>
+                                <td>Austria</td>
+                                <td><form action=""><button class="btn btn-offline">offline</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Island Trading</td>
+                                <td>Helen Bennett</td>
+                                <td>Helen Bennett</td>
+                                <td>UK</td>
+                                <td><form action=""><button class="btn btn-online">online</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Island Trading</td>
+                                <td>Helen Bennett</td>
+                                <td>Helen Bennett</td>
+                                <td>UK</td>
+                                <td><form action=""><button class="btn btn-online">online</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Island Trading</td>
+                                <td>Helen Bennett</td>
+                                <td>Helen Bennett</td>
+                                <td>UK</td>
+                                <td><form action=""><button class="btn btn-online">online</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Königlich Essen</td>
+                                <td>Philip Cramer</td>
+                                <td>Philip Cramer</td>
+                                <td>Germany</td>
+                                <td><form action=""><button class="btn btn-online">online</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Königlich Essen</td>
+                                <td>Philip Cramer</td>
+                                <td>Philip Cramer</td>
+                                <td>Germany</td>
+                                <td><form action=""><button class="btn btn-online">online</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Laughing Bacchus Winecellars</td>
+                                <td>Laughing Bavcchus Winecellars</td>
+                                <td>Yoshi Tannamuri</td>
+                                <td>Canada</td>
+                                <td><form action=""><button class="btn btn-offline">offline</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Magazzini Alimentari Riuniti</td>
+                                <td>Giovanni Rovelli</td>
+                                <td>Giovanni Rovelli</td>
+                                <td>Italy</td>
+                                <td><form action=""><button class="btn btn-offline">offline</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>North/South</td>
+                                <td>Simon Crowther</td>
+                                <td>Simon Crowther</td>
+                                <td>UK</td>
+                                <td><form action=""><button class="btn btn-online">online</button></form></td>
+                            </tr>
+                            <tr>
+                                <td>Paris spécialités</td>
+                                <td>Paris spécialités</td>
+                                <td>Marie Bertrand</td>
+                                <td>France</td>
+                                <td><form action=""><button class="btn btn-offline">offline</button></form></td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+                </div>
+            </div>
+                    <div class="side-nav" id="side-nav-move">
+                        <h2 class="side-nav-title">ADMIN DASHBOARD</h2>
+                        <ul class="side-nav-ul">
+                            <li class="side-nav-ul-li">Dashboard <i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+                            <li class="side-nav-ul-li">Books<i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+                            <li class="side-nav-ul-li">Category<i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+                            <li class="side-nav-ul-li">Authors<i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+                            <li class="side-nav-ul-li">Adherents<i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                </div>
+</body>
+</html>
