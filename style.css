@@ -145,6 +145,7 @@
     color: white;
 }
 .dashboard-table tr .btn {
+    cursor: pointer;
     outline: none;
     padding: .3vw;
     color: white;
